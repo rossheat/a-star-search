@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-    <script src="main.js" type="module" defer></script>
   </head>
   <body>
+
+    <script type="module">
+    import init, { run } from "./pkg/a_star_search.js"
+
+
+    async function main() {
+
+      await init(); 
+      console.log("WASM module initialised");
+      try {
+        run();
+        console.log("Rust function 'run' executed");
+      } catch (e) {
+        console.error("Error calling rust function:", e);
+      }
+    }
+    main(); 
+
+    </script>
   </body>
 </html>
