@@ -17,6 +17,12 @@ The app should open in your browser.
 
 ## Development
 
+Ensure you have nodemon installed:
+
+```
+npm i -g nodemon
+```
+
 Start the nodemon file watcher:
 
 ```
