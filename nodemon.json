@@ -3,5 +3,5 @@
     "src"
   ],
   "ext": "rs",
-  "exec": "wasm-pack build --target web -- --features console_error_panic_hook"
+  "exec": "RUSTFLAGS='--cfg getrandom_backend=\"wasm_js\"' wasm-pack build --target web --release -- --features console_error_panic_hook"
 }
