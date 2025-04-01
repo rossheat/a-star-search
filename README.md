@@ -3,11 +3,29 @@
 ![a star search](./astar.png)
 
 - An implementation of the A* search algorithm.
-- Uses euclidean distance as the heuristic function.
+- Uses Euclidean distance as the heuristic function.
 - Obstacles, start and goal points are placed randomly.
 - Demo: <https://rossheat.github.io/a-star-search/>
 
 ## Launch
+
+Install Rust:
+
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+Add the Wasm target:
+
+```
+rustup target add wasm32-unknown-unknown
+```
+
+Install wasm-pack:
+
+```
+cargo install wasm-pack
+```
 
 Start the server:
 
