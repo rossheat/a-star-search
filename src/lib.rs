@@ -486,7 +486,7 @@ impl AStar {
 #[wasm_bindgen]
 pub async fn run() -> Result<(), JsValue> {
     loop {
-        let mut grid = Grid::new(30)?;
+        let mut grid = Grid::new(20)?;
         let mut a_star = AStar { grid: grid };
         a_star.search().await;
         let dur = Duration::from_millis(3000);

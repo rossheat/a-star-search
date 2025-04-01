@@ -1,5 +1,7 @@
 #  A* Search
 
+[a star search](./astar.png)
+
 - An implementation of the A* search algorithm.
 - Uses euclidean distance as the heuristic function.
 - Obstacles, start and goal points are placed randomly.
