@@ -425,8 +425,8 @@ impl AStar {
         source_cell.set_parent_cell_idx(None);
 
         while open_list.len() > 0 {
-            // let dur = Duration::from_millis(10);
-            // Delay::new(dur).await;
+            let dur = Duration::from_millis(10);
+            Delay::new(dur).await;
             let mut current = self.get_cell_with_lowest_f_score(&open_list);
             if current == goal_cell {
                 return self.reconstruct_path(current);

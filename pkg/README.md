@@ -5,6 +5,7 @@
 - An implementation of the A* search algorithm.
 - Uses Euclidean distance as the heuristic function.
 - Obstacles, start and goal points are placed randomly.
+- Demo: https://rossheat.github.io/a-star-search/
 
 ## Launch
 
